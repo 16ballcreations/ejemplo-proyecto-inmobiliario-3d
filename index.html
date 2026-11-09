@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Arrayán · Residencias en la montaña | Sitio de ejemplo</title>
+  <meta name="description" content="Sitio de ejemplo de 16 Ball Creations para constructoras: mira nacer una torre de 24 pisos mientras bajas y recorre su penthouse en 3D.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arrayán · Residencias en la montaña (sitio de ejemplo)">
+  <meta property="og:description" content="Sitio de ejemplo de 16 Ball Creations: una torre ficticia que se construye con el scroll y un penthouse que se recorre en 3D.">
+  <meta property="og:image" content="https://16ballcreations.github.io/ejemplo-proyecto-inmobiliario-3d/assets/og.jpg">
+  <meta property="og:url" content="https://16ballcreations.github.io/ejemplo-proyecto-inmobiliario-3d/">
+  <meta name="theme-color" content="#101614">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23c66b40%22/%3E%3Cpath d=%22M9 24V12l7-5 7 5v12%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%222.4%22/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/estilo.css">
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body>
+  <div class="aviso-ejemplo" role="note">
+    <span>Sitio de ejemplo<span class="aviso-ejemplo__largo">. Arrayán es un proyecto ficticio: la torre, el lote, las cifras y los precios son inventados</span>.</span>
+    <a href="https://16ballcreations.com/proyectos/#ejemplos" target="_blank" rel="noopener">Hecho por 16 Ball Creations <span aria-hidden="true">↗</span></a>
+  </div>
+  <header class="barra">
+    <a class="marca" href="#inicio" aria-label="Arrayán, volver al inicio">ARRAYÁN</a>
+    <nav class="acciones">
+      <a class="enlace-barra" href="#proyecto">Proyecto</a>
+      <a class="enlace-barra" href="#penthouse">Penthouse</a>
+      <button class="boton boton--linea" type="button" data-abrir-ph>Recorrido 3D</button>
+      <a class="boton boton--claro" href="#contacto">Agendar visita</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1 · La obra: escena fija que se construye con el scroll -->
+    <section class="obra" id="inicio" data-pista>
+      <div class="escenario" data-escenario>
+        <canvas class="lienzo" data-lienzo aria-label="La torre Arrayán se construye a medida que bajas"></canvas>
+        <div class="velo"></div>
+
+        <div class="capitulo capitulo--hero on" data-cap="c0">
+          <p class="antetitulo">Residencias en la montaña · Medellín</p>
+          <h1>Arrayán</h1>
+          <p class="entrada">Mira nacer la torre: 24 pisos sobre el Alto de Las Palmas, con el valle a tus pies.</p>
+          <p class="pista"><span aria-hidden="true">↓</span> Baja para construir</p>
+        </div>
+        <div class="capitulo" data-cap="c1">
+          <p class="antetitulo">01 · Cimentación</p>
+          <h2>Primero, la montaña.</h2>
+          <p>36 pilotes anclados a roca y un basamento de ladrillo que se asienta en la ladera sin pelearse con ella.</p>
+        </div>
+        <div class="capitulo" data-cap="c2">
+          <p class="antetitulo">02 · Estructura</p>
+          <h2>Un piso cada nueve días.</h2>
+          <p>Losas postensadas sin vigas: plantas libres para que cada hogar se acomode a quien lo vive.</p>
+        </div>
+        <div class="capitulo capitulo--der" data-cap="c3">
+          <p class="antetitulo">03 · Fachada</p>
+          <h2>Ladrillo, como Medellín.</h2>
+          <p>Aletas de ladrillo a la vista que filtran el sol de la tarde y vidrio de piso a techo hacia el valle.</p>
+        </div>
+        <div class="capitulo" data-cap="c4">
+          <p class="antetitulo">04 · Penthouse</p>
+          <h2>Arriba, el cielo.</h2>
+          <p>360 m² con terraza y piscina de borde infinito suspendida sobre el valle de Aburrá.</p>
+        </div>
+        <div class="capitulo" data-cap="c6">
+          <p class="antetitulo">05 · Amenidades</p>
+          <h2>Abajo, la vida.</h2>
+          <p>Piscina con deck al borde del valle, cancha de tenis reglamentaria, parqueadero para residentes y visitantes, y una vía de acceso con retorno frente al lobby.</p>
+        </div>
+        <div class="capitulo capitulo--final" data-cap="c5">
+          <p class="antetitulo">Penthouse · piso 24</p>
+          <h2>Llegaste a la cima.</h2>
+          <p>Las luces de la ciudad se encienden abajo. ¿Cómo quieres seguir?</p>
+          <div class="bifurcacion">
+            <button type="button" class="opcion opcion--llena" data-abrir-ph>
+              <strong>Entrar al penthouse</strong>
+              <span>Recorrido 3D, ambiente por ambiente</span>
+            </button>
+            <a class="opcion" href="#proyecto">
+              <strong>Conocer el proyecto</strong>
+              <span>Arquitectura, penthouse y ubicación</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hud" aria-label="Avance de la obra">
+          <p class="hud__titulo">Piso</p>
+          <p class="hud__piso"><b data-hud="piso">00</b><span>/24</span></p>
+          <div class="hud__riel" aria-hidden="true"><i data-hud="barra"></i></div>
+          <p class="hud__etapa" data-hud="etapa">Terreno y cimentación</p>
+          <p class="hud__pct"><span data-hud="pct">0%</span> · <span data-hud="grados">0°</span></p>
+        </aside>
+
+        <div class="modo" role="group" aria-label="Versión de la portada">
+          <a href="?modo=3d" data-modo="3d">3D en vivo</a>
+          <a href="?modo=video" data-modo="video">Video IA</a>
+        </div>
+
+        <div class="cargador" data-cargador hidden>
+          <i data-cargador-barra></i>
+          <span><span data-cargador-texto>Cargando la obra</span> · <b data-cargador-pct>0%</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Cifras -->
+    <section class="cifras" id="proyecto" aria-label="El proyecto en cifras">
+      <dl>
+        <div><dt><span data-cuenta="24">24</span></dt><dd>pisos residenciales sobre la ladera</dd></div>
+        <div><dt>+<span data-cuenta="94.2" data-dec="1">94,2</span><small>m</small></dt><dd>cota de coronamiento</dd></div>
+        <div><dt><span data-cuenta="360">360</span><small>m²</small></dt><dd>penthouse con terraza y piscina</dd></div>
+        <div><dt><span data-cuenta="270">270</span><small>grados</small></dt><dd>de vista al valle y a los cerros</dd></div>
+      </dl>
+    </section>
+
+    <!-- 3 · Arquitectura -->
+    <section class="seccion" id="arquitectura">
+      <header class="seccion__cabeza">
+        <p class="antetitulo">01 · Arquitectura</p>
+        <h2>Pensada para vivir mirando el valle.</h2>
+        <p>Cuatro fachadas iguales y una sola regla: que cada hogar tenga paisaje, luz y aire de montaña.</p>
+      </header>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="tarjeta__n">01</span>
+          <h3>Asentada en roca</h3>
+          <p>36 pilotes de 1 m de diámetro y un muro de contención que respeta la pendiente natural del lote.</p>
+          <p class="tarjeta__pie">Cimentación profunda</p>
+        </article>
+        <article class="tarjeta">
+          <span class="tarjeta__n">02</span>
+          <h3>Plantas libres</h3>
+          <p>Losas postensadas de 10,8 m de luz y balcones alternados que dan sombra al piso de abajo.</p>
+          <p class="tarjeta__pie">Espacios que se adaptan</p>
+        </article>
+        <article class="tarjeta">
+          <span class="tarjeta__n">03</span>
+          <h3>Piel de ladrillo</h3>
+          <p>Aletas verticales de ladrillo cocido y vidrio laminado acústico de piso a techo.</p>
+          <p class="tarjeta__pie">Silencio y luz natural</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4 · Penthouse -->
+    <section class="seccion seccion--ph" id="penthouse">
+      <div class="ph">
+        <div class="ph__texto">
+          <p class="antetitulo">02 · Piso 24 · Cota +94,2 m</p>
+          <h2>El penthouse</h2>
+          <p>Un último piso de vidrio con sala de doble altura, terraza perimetral y una piscina que se asoma al valle.</p>
+          <ul class="ph__lista" data-lista-ambientes></ul>
+          <div class="ph__botones">
+            <button type="button" class="boton boton--claro boton--grande" data-abrir-ph>Recorrer el penthouse en 3D</button>
+            <a class="boton boton--linea boton--grande" href="#contacto">Pedir visita privada</a>
+          </div>
+          <p class="nota">Camina por los ambientes y cambia pisos y mesones en vivo. Para volver, presiona Esc o toca «Salir».</p>
+        </div>
+      </div>
+      <div class="galeria" aria-label="Renders del penthouse">
+        <figure class="galeria__grande"><img src="assets/renders/sala.webp" alt="Sala de doble altura con sofá en L, poltronas de cuero y ventanal al atardecer" loading="lazy" width="1600" height="1000"><figcaption>Sala de doble altura</figcaption></figure>
+        <figure><img src="assets/renders/cocina.webp" alt="Cocina con isla de mármol en cascada y butacos de cuero" loading="lazy" width="1600" height="1000"><figcaption>Cocina con isla</figcaption></figure>
+        <figure><img src="assets/renders/comedor.webp" alt="Comedor de nogal para ocho con lámpara de anillo" loading="lazy" width="1600" height="1000"><figcaption>Comedor y bar</figcaption></figure>
+        <figure><img src="assets/renders/suite.webp" alt="Suite principal con cabecero tapizado" loading="lazy" width="1600" height="1000"><figcaption>Suite principal</figcaption></figure>
+        <figure><img src="assets/renders/terraza.webp" alt="Terraza con piscina de borde infinito sobre el valle" loading="lazy" width="1600" height="1000"><figcaption>Terraza con piscina</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 5 · Ubicación -->
+    <section class="seccion" id="ubicacion">
+      <header class="seccion__cabeza">
+        <p class="antetitulo">03 · Ubicación</p>
+        <h2>A veinte minutos del Poblado, a mil metros del ruido.</h2>
+        <p>Vía Las Palmas, sobre la ladera oriental. La dirección exacta la compartimos en la visita privada.</p>
+      </header>
+      <ul class="datos">
+        <li><b>2.480 m</b> sobre el nivel del mar</li>
+        <li><b>17 °C</b> de temperatura promedio</li>
+        <li><b>20 min</b> al Parque Lleras</li>
+        <li><b>25 min</b> al aeropuerto José María Córdova</li>
+      </ul>
+    </section>
+
+    <!-- 6 · Contacto -->
+    <section class="seccion seccion--contacto" id="contacto">
+      <div class="contacto">
+        <div>
+          <p class="antetitulo">04 · Contacto</p>
+          <h2>Agenda una visita privada.</h2>
+          <p>Te mostramos la torre, los apartamentos disponibles y el penthouse en un recorrido a tu medida.</p>
+          <dl class="contacto__datos">
+            <div><dt>Atención</dt><dd>Con cita previa, de lunes a sábado</dd></div>
+            <div><dt>Respuesta</dt><dd>En menos de 24 horas hábiles</dd></div>
+            <div><dt>Antes de venir</dt><dd><button type="button" class="enlace" data-abrir-ph>Recorre el penthouse en 3D</button></dd></div>
+          </dl>
+        </div>
+        <form class="formulario" novalidate data-formulario>
+          <label>Nombre<input name="nombre" required autocomplete="name"></label>
+          <label>Correo<input name="correo" type="email" required autocomplete="email"></label>
+          <label>Teléfono<input name="telefono" type="tel" autocomplete="tel"></label>
+          <fieldset>
+            <legend>Me interesa</legend>
+            <label class="chip"><input type="radio" name="interes" value="apartamento" checked><span>Apartamento</span></label>
+            <label class="chip"><input type="radio" name="interes" value="penthouse"><span>Penthouse</span></label>
+            <label class="chip"><input type="radio" name="interes" value="inversion"><span>Inversión</span></label>
+          </fieldset>
+          <label>Mensaje<textarea name="mensaje" rows="3"></textarea></label>
+          <button class="boton boton--claro boton--grande" type="submit">Solicitar visita privada</button>
+          <p class="nota" data-formulario-estado>Sitio de ejemplo: el formulario no envía ni guarda tus datos.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="marca">ARRAYÁN</p>
+    <p>Proyecto conceptual. Escena 3D generada en el navegador; no constituye oferta comercial.</p>
+    <p>Sitio de ejemplo hecho por <a href="https://16ballcreations.com/proyectos/#ejemplos">16 Ball Creations</a> · 2026. Texturas y cielos de Poly Haven (CC0).</p>
+  </footer>
+
+  <button class="flotante" type="button" data-abrir-ph data-flotante>Recorrido 3D del penthouse</button>
+
+  <script type="module" src="assets/escena.js"></script>
+</body>
+</html>

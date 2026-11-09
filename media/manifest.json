@@ -1,0 +1,55 @@
+{
+  "nota": "Tomas de PRUEBA renderizadas desde la versión 3D. Reemplazar por las tomas de video IA (ver GUION-TOMAS.md).",
+  "fps": 30,
+  "escritorio": [
+    {
+      "src": "media/prueba_0_720.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 4110369
+    },
+    {
+      "src": "media/prueba_1_720.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 5774944
+    },
+    {
+      "src": "media/prueba_2_720.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 5490836
+    }
+  ],
+  "movil": [
+    {
+      "src": "media/prueba_0_480.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 1217091
+    },
+    {
+      "src": "media/prueba_1_480.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 1620063
+    },
+    {
+      "src": "media/prueba_2_480.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 1581883
+    }
+  ],
+  "vertical": [
+    {
+      "src": "media/prueba_0_v.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 1145184
+    },
+    {
+      "src": "media/prueba_1_v.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 1684826
+    },
+    {
+      "src": "media/prueba_2_v.mp4",
+      "dur": 3.3333333333333335,
+      "bytes": 1521673
+    }
+  ]
+}
